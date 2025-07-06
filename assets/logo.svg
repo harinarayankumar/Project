@@ -1,0 +1,32 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="20" cy="20" r="20" fill="url(#gradient)" />
+  
+  <!-- E-Cell Logo Design -->
+  <!-- Letter E -->
+  <path d="M12 12H18V14H14V18H17V20H14V24H18V26H12V12Z" fill="white" />
+  
+  <!-- Dash separator -->
+  <rect x="19" y="19" width="2" height="2" fill="white" />
+  
+  <!-- Letter C -->
+  <path d="M22 16C22 14.9 22.9 14 24 14H26C27.1 14 28 14.9 28 16V17H26V16H24V24H26V23H28V24C28 25.1 27.1 26 26 26H24C22.9 26 22 25.1 22 24V16Z" fill="white" />
+  
+  <!-- Innovation Symbol - Lightbulb -->
+  <circle cx="20" cy="32" r="2" fill="#FF9900" />
+  <path d="M19 30H21L20.5 28H19.5L19 30Z" fill="#FF9900" />
+  
+  <!-- Sparkle Effects -->
+  <circle cx="32" cy="8" r="1" fill="#FF9900" opacity="0.8" />
+  <circle cx="8" cy="32" r="1" fill="#FF9900" opacity="0.6" />
+  <circle cx="35" cy="20" r="0.5" fill="white" opacity="0.7" />
+  <circle cx="5" cy="15" r="0.5" fill="white" opacity="0.5" />
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0052CC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

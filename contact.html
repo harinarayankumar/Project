@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GEC Vaishali E-Cell</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/logo.svg" alt="E-Cell Logo" width="40" height="40" class="me-2">
+                <span class="fw-bold">GEC Vaishali E-Cell</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold text-white mb-3">Contact Us</h1>
+                    <p class="lead text-white-50">Get in touch with GEC Vaishali E-Cell</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-lg-4 mb-5">
+                    <div class="contact-info">
+                        <h3 class="fw-bold mb-4">Get In Touch</h3>
+                        <p class="text-muted mb-4">
+                            Have questions about our programs or want to get involved? We'd love to hear from you!
+                        </p>
+
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="contact-icon me-3">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Address</h5>
+                                    <p class="text-muted mb-0">
+                                        Government Engineering College<br>
+                                        Vaishali, Bihar, India
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="contact-icon me-3">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Email</h5>
+                                    <p class="text-muted mb-0">ecell@gecvaishali.ac.in</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="contact-icon me-3">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Phone</h5>
+                                    <p class="text-muted mb-0">+91 98765 43210</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <h5 class="fw-bold mb-3">Follow Us</h5>
+                            <div class="social-links">
+                                <a href="#" class="text-primary me-3 fs-4"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="text-primary me-3 fs-4"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-primary me-3 fs-4"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-primary fs-4"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <h3 class="fw-bold mb-4">Send us a Message</h3>
+                        
+                        <div id="form-message" class="alert d-none" role="alert"></div>
+                        
+                        <form id="contactForm" action="php/contact.php" method="POST">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName" name="first_name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName" name="last_name" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <select class="form-select" id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="membership">Membership</option>
+                                    <option value="mentorship">Mentorship Program</option>
+                                    <option value="events">Events & Workshops</option>
+                                    <option value="partnership">Partnership</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Tell us about your inquiry..."></textarea>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter" value="yes">
+                                <label class="form-check-label" for="newsletter">
+                                    Subscribe to our newsletter for updates on events and programs
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-6 fw-bold mb-3">Frequently Asked Questions</h2>
+                    <p class="lead text-muted">Find answers to common questions about GEC Vaishali E-Cell</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                    How can I join GEC Vaishali E-Cell?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Students of GEC Vaishali can join by attending our orientation sessions held at the beginning of each semester. You can also contact us through this form or visit our office during working hours.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                    What kind of support does E-Cell provide to startups?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We provide mentorship, networking opportunities, workshops on business development, access to funding information, and help with business plan development. We also organize pitch events and connect startups with potential investors.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                    Are there any membership fees?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No, membership to GEC Vaishali E-Cell is completely free for all students of Government Engineering College, Vaishali. We believe in making entrepreneurship accessible to everyone.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                    When are your events and workshops held?
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We organize events and workshops throughout the academic year. Major events are typically held during weekends, while workshops are scheduled during free periods. Follow our social media channels for updates on upcoming events.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-3">GEC Vaishali E-Cell</h5>
+                    <p class="text-white-50">
+                        Government Engineering College, Vaishali<br>
+                        Entrepreneurship Cell
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links mb-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="text-white-50 mb-0">Created by Hari Narayan</p>
+                </div>
+            </div>
+            <hr class="my-3 text-white-50">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-white-50">
+                        &copy; 2024 GEC Vaishali E-Cell. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
